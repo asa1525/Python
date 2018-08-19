@@ -2,7 +2,7 @@
 #-*- coding: utf-8 -*-
 __author__ = 'hstking hstking@hotmail.com'
 
-import urllib2
+import urllib3
 
 def clear():
 	'''该函数用于清屏 '''
@@ -17,8 +17,8 @@ def clear():
 def linkBaidu():
 	url = 'http://www.baidu.com'
 	try:
-		response = urllib2.urlopen(url,timeout=3)
-	except urllib2.URLError:
+		response = urllib3.urlopen(url,timeout=3)
+	except urllib3.URLError:
 		print(u"网络地址错误")
 		exit()
 	with open('./baidu.txt','w') as fp:
