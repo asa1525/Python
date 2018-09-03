@@ -48,8 +48,8 @@ def quick_sort_3(array, left, right):
     print('low,high,key:', low, high, key)
     while left < right: # while 0 < 8 :
         while left < right and array[right] > key:  # while 0 < 8 &  7 > 2
-            right -= 1                              # right = 7
-        array[left] = array[right]                  # array[left] = 3
+            right -= 1                              # right = 4
+        array[left] = array[right]                  # array[left] = 1
         print('array[left]',array[left], 'array[right]:', array[right])
 
         while left < right and array[left] <= key:  # 3 < 7 & 5 <= 2 !X
